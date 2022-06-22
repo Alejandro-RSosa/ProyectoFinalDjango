@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+
+{% load static %}
+
+{% block compartido %} 
+    <style>
+        h1{text-align: center;}
+        form{text-align: center;}
+    </style>
+
+    <h1>INGRESAR:</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+        <button type="">INGRESAR</button>        
+    </form>
+{% endblock %}

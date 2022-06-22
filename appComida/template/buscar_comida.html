@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+
+{% load static %}
+
+{% block compartido %} 
+    <style>
+        h1{text-align: center;}
+        form{text-align: center;}
+    </style>
+    
+    <h1> Buscar alimento </h1>
+    <form action="buscar">
+        <label for="">Nombre: </label>
+        <input type="text" name="nombre" id="nombre">
+        <input type="submit" value="Buscar">
+    </form>
+
+{% endblock %}

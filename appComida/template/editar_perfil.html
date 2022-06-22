@@ -1,0 +1,24 @@
+{% extends "index.html" %}
+
+{% load static %}
+
+{% block compartido %} 
+    <style>
+        h1 {text-align: center; font-style: italic;}        
+    </style>
+
+    <h1> Editar perfil </h1>
+    <h2> {{username}} </h2>
+    
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        <table>
+            {{ mi_form.as_table }}
+
+        </table>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+{% endblock %}
